@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML5 Content and Form Assignment2 (Eyuel Desta Habeha)</title>
+  <meta name="description" content="Eyuel's HTML5 assignment with semantic content and validated form." />
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content and Form Showcase</h1>
+    <p>This PLP assignment demonstrates lists, tables, media, and form validation using only HTML5.</p>
+  </header>
+
+  <main>
+
+    <!-- Section 1: List Content -->
+    <section>
+      <h2>1. Favorite Subjects</h2>
+      <article>
+        <p>Here are my favorite subjects:</p>
+        <ul>
+          <li>Mathematics</li>
+          <li>Computer Science</li>
+          <li>Astro Physics</li>
+          <li>English Literature</li>
+        </ul>
+      </article>
+
+      <article>
+        <p>Steps to complete this assignment:</p>
+        <ol>
+          <li>Create an HTML file</li>
+          <li>Use semantic tags</li>
+          <li>Add media and tables</li>
+          <li>Build a complete HTML5 form</li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+      <h2>2. Study Plan Table</h2>
+      <table border="1">
+        <caption>Weekly Study Plan</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Web development(<Html)></HTml></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Python</td>
+            <td>3</td>
+          </tr>
+
+          <tr> 
+            <td>Thursday</td>
+            <td>Artificial intelligence</td>
+            <td>4</td>
+          </tr>
+
+          <tr>
+            <td>Friday</td>
+            <td>Project Work</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>3. Media Samples</h2>
+
+      <figure>
+        <img src="https://picsum.photos/300/150" alt="Random placeholder image" />
+        <figcaption>Figure 1: Random placeholder image from Picsum.photos</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Figure 2: Public domain audio example from SoundHelix</figcaption>
+      </figure>
+
+      <figure>
+        <video controls width="300">
+          <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+        <figcaption>Figure 3: Public sample video from TechSlides</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section 4: Map -->
+    <section>
+      <h2>4. Location Map: Addis Ababa</h2>
+      <figure>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.486294328165!2d38.73125177508224!3d9.030647139173932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b853bb9f8c847%3A0x5b620d7e2f96449d!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1628864000000!5m2!1sen!2sus" 
+          width="300" 
+          height="200" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <figcaption>Figure 4: Map of Addis Ababa, Ethiopia(Africa)</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section 5: Ethiopian Music Embed from YouTube -->
+    <section>
+      <h2>5. Ethiopian Music from YouTube Singer Teddy</h2>
+      <figure>
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/8v0Om_R1HZQ" 
+          title="Teddy Afro - Ethiopia" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+        <figcaption>Figure 5: Teddy Afro - Ethiopia (YouTube Embed)</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section 6: Details Block -->
+    <section>
+      <h2>6. If You Want, Learn More</h2>
+      <details>
+        <summary>Click to learn how I structured this form</summary>
+        <p>I used fieldsets to group inputs, semantic labels for accessibility, and HTML5 validation attributes like <code>required</code>, <code>pattern</code>, and <code>autocomplete</code>.</p>
+      </details>
+    </section>
+   <!-- Section 7: Form -->
+    <section>
+      <h2>7. Registration Form</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Your Basic Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Eyuel Desta Habesha" autocomplete="name" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="eyuel2084@email.com" autocomplete="email" />
+
+          <label for="birth">Date of Birth:</label>
+          <input type="date" id="birth" name="birth" required autocomplete="bday" />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+251963807158" pattern="[0-9+]{10,13}" />
+        </fieldset>
+
+         <label for="city">Choose your city:</label>
+         <input list="cities" id="city" name="city" placeholder="e.g., Addis Ababa" autocomplete="on" />
+         <datalist id="cities">
+         <option value="Addis Ababa">
+         <option value="Bahir Dar">
+         <option value="Gondar">
+         <option value="Hawassa">
+         <option value="Others"></option>
+        </datalist>
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{4,}" placeholder="eyuel1" />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" />
+
+          <label for="role">Your Role:</label>
+          <select id="role" name="role" required>
+            <option value="">--Select Role--</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="teacher">Teacher</option>
+            <option value="Others">Others</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="website">Your Website (if necessary):</label>
+          <input type="url" id="website" name="website" placeholder="https://your-site.com" />
+
+          <label for="color">Pick your favorite color:</label>
+          <input type="color" id="color" name="color" />
+
+          <label for="rating">Please rate this form:</label>
+          <input type="range" id="rating" name="rating" min="1" max="100" />
+
+          <label for="language">Preferred Language:</label>
+          <input type="text" id="language" name="language" value="English" readonly />
+
+          <label><input type="checkbox" name="newsletter" checked /> Subscribe to newsletter</label>
+
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="3" placeholder="Tell us your feelings..."></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Form" />
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Submitted by: Eyuel Desta | Email:eyuel2084@gmail.com  | July 2025</p>
+  </footer>
+
+</body>
+</html>
